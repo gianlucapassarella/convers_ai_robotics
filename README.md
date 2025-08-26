@@ -16,6 +16,10 @@ Permette di parlare con l’AI e, allo stesso tempo, comandare un braccio roboti
 - HUD diagnostico (console o finestra grafica OpenCV) con stato rete, connessione e microfono.
 
 ---
+## 🎥 Demo
+
+[![Watch the demo](https://img.youtube.com/vi/qj3egxmWiZ4/0.jpg)](https://youtu.be/qj3egxmWiZ4)
+
 
 ## 📂 Struttura del progetto
 
