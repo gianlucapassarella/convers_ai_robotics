@@ -1,0 +1,5 @@
+# Normalizza gli end-of-line su LF per evitare problemi Arduino/Python
+* text=auto eol=lf
+
+# Tratta i file .ino come testo
+*.ino text

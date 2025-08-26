@@ -1,5 +1,9 @@
 # 🤖 Convers AI Robotics
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue)
+![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows%20%7C%20RaspberryPi-lightgrey)
+
 **Convers AI Robotics** è un assistente vocale conversazionale in tempo reale che integra **OpenAI Realtime API** con un **Arduino** collegato via USB.  
 Permette di parlare con l’AI e, allo stesso tempo, comandare un braccio robotico o altri dispositivi connessi ad Arduino.
 
@@ -20,7 +24,7 @@ Permette di parlare con l’AI e, allo stesso tempo, comandare un braccio roboti
 
 [![Watch the demo](https://img.youtube.com/vi/qj3egxmWiZ4/0.jpg)](https://youtu.be/qj3egxmWiZ4)
 
-
+---
 ## 📂 Struttura del progetto
 
 ```
@@ -42,7 +46,7 @@ convers_ai_robotics/
 
 ### 1. Clona il repository
 ```bash
-git clone https://github.com/<tuo-utente>/convers_ai_robotics.git
+git clone https://github.com/gianlucapassarella/convers_ai_robotics.git
 cd convers_ai_robotics
 ```
 
@@ -50,7 +54,7 @@ cd convers_ai_robotics
 ```bash
 python -m venv .venv
 source .venv/bin/activate   # Linux/macOS
-.venv\Scripts\activate      # Windows
+.\.venv\Scripts\activate      # Windows
 ```
 
 ### 3. Installa le dipendenze
@@ -117,10 +121,22 @@ Le conversazioni vengono salvate automaticamente nella cartella:
 - `Scrivania/AI_Conversazioni/` (macOS in italiano)
 
 ---
+## 📡 Protocollo seriale (Arduino)
+- Baud: 115200, newline-terminated JSON (JSONL)
+- Comandi esempio:
+  {"cmd":"HOME"}
+  {"cmd":"WAVE"}
+  {"cmd":"OPEN"} | {"cmd":"CLOSE"}
+  {"cmd":"MOVE","dir":"LEFT|RIGHT|UP|DOWN"}
+  {"cmd":"CIRCLE"}
+  {"cmd":"DRAW","char":"A"}
+- Risposte:
+  {"status":"done"} oppure {"status":"error","msg":"..."}
 
+---
 ## 🛠️ Requisiti
 
-- Python 3.11+
+- Python 3.9+
 - Librerie da `requirements.txt`
 - Scheda Arduino compatibile (UNO, Mega, Nano, ecc.)
 - Microfono e speaker funzionanti
