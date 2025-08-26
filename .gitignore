@@ -1,0 +1,69 @@
+# ---- Prompt personali ----
+prompt/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.manifest
+*.spec
+
+# ---- Virtual env ----
+.venv/
+venv/
+env/
+ENV/
+.venv*/
+pip-wheel-metadata/
+
+# ---- Logs ----
+*.log
+*.pot
+*.pyproj
+*.coverage
+.coverage*
+coverage/
+htmlcov/
+
+# ---- IDE / Editor / OS ----
+.ideavimrc
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ---- Env & local configs ----
+.env
+.env.*         # ignora tutti gli env files
+!.env.example  # tieni solo il template
+
+# ---- Cache & bytecode ----
+.cache/
+.mypy_cache/
+.pytest_cache/
+__snapshots__/
+
+# ---- Node / frontend (se mai usi js) ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---- Database / misc ----
+*.sqlite3
+*.db
+*.swp
+*.swo
+
+# ---- Arduino ----
+*.hex
+*.elf
+*.bin
+.pio/

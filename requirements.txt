@@ -1,0 +1,10 @@
+
+numpy
+sounddevice
+websockets
+python-dotenv
+colorama
+pyserial
+openai
+opencv-python
+
