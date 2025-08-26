@@ -9,9 +9,9 @@ Permette di parlare con l’AI e, allo stesso tempo, comandare un braccio roboti
 - Interruzione automatica del microfono mentre l’AI parla (niente eco).
 - Memoria conversazionale locale con log su file.
 - Controllo robotico via **seriale USB** (Arduino):
-  - saluto, home, apertura/chiusura pinza
-  - movimenti direzionali (su, giù, destra, sinistra)
-  - disegno lettere e forme semplici
+- saluto, home, apertura/chiusura pinza
+- movimenti direzionali (su, giù, destra, sinistra)
+- disegno lettere e forme semplici
 - Auto-rilevamento della porta seriale Arduino.
 - HUD diagnostico (console o finestra grafica OpenCV) con stato rete, connessione e microfono.
 
