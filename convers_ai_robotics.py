@@ -48,7 +48,7 @@ except Exception:
     pass
 
 API_KEY = os.getenv("OPENAI_API_KEY")
-MODEL   = os.environ.get("OPENAI_REALTIME_MODEL", "gpt-4o-mini-realtime-preview-2024-12-17")
+MODEL   = os.environ.get("OPENAI_REALTIME_MODEL", "gpt-realtime")
 URL     = f"wss://api.openai.com/v1/realtime?model={MODEL}"
 
 SCRIPT_DIR = pathlib.Path(__file__).parent
@@ -85,7 +85,7 @@ OUTPUT_MAX_BUFFER_SEC = int(os.environ.get("OUTPUT_MAX_BUFFER_SEC", "20"))
 LISTEN_COOLDOWN_MS = int(os.environ.get("LISTEN_COOLDOWN_MS", "1000"))
 
 # Voce TTS e dispositivi audio (opzionali)
-VOICE      = os.environ.get("OPENAI_VOICE", "verse")
+VOICE      = os.environ.get("OPENAI_VOICE", "cedar")
 MIC_DEVICE = os.environ.get("MIC_DEVICE")
 SPK_DEVICE = os.environ.get("SPK_DEVICE")
 
